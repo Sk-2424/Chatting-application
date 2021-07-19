@@ -1,0 +1,180 @@
+
+/* general padding and margin change */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar styling logo with headline */
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav h1{
+    color:rgb(214, 173, 91);
+    font-family: cursive,monospace;
+    margin-bottom: 20px;
+    
+}
+/* Background styling */
+body{
+    /* background-color: rgb(77, 67, 67); */
+    background-color: rgb(20, 20, 20);
+    height: 100vh;
+    /* background-image: linear-gradient( rgb(77, 67, 67), rgb(223, 35, 35)); */
+}
+
+/* main chat window styling */
+.container{
+    background-color: rgb(243, 235, 235);
+    width: 40%;
+    height: 70vh;
+    padding: 0%;
+    margin:auto;
+    border: 2px solid black;
+    border-radius: 6px ;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+    
+}
+/* top username section of chat window */
+.userName
+{
+    display: flex;
+    align-items: center;
+    background-color: rgba(23, 59, 177, 0.74);
+    margin-top: -1px;
+    padding: 18px;
+    border-radius: 6px 6px 0px 0px ;
+}
+
+.userName img
+{
+    height: 20px;
+    margin-right: 5px ;
+    cursor: pointer;
+}
+
+.userName #img1
+{
+    height: 10px;
+    width: 10px;
+    margin-left: auto;
+
+}
+.user1
+{
+    font-family: cursive;
+}
+
+
+/* Styling of message box */
+.msg{
+    background-color: rgb(209, 201, 201);
+    width: 42%;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid cadetblue;
+    border-radius: 8px;
+    font-family: cursive;
+}
+
+.left{
+    float: left;
+    clear:both;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.right{
+    float: right;
+    clear:both;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+
+/* Styling of input and submit button */
+
+.form-container
+{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#inpMsg
+{
+    width: 550px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: cursive;
+}
+
+#btnSubmit
+{
+    padding: 6px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+
+/* Responsive */
+  @media screen and (max-device-width: 600px)
+  {
+    .container{
+        width: 40vh;
+    }
+    #inpMsg
+    {
+    width: 31vh;
+    }
+  }
+  @media screen and (min-device-width: 601px) and (max-device-width: 800px) { 
+
+    .container{
+        width: 50vh;
+    }
+    #inpMsg
+    {
+    width: 40vh;
+    }
+  }
+  @media screen and (min-device-width: 801px) and (max-device-width: 999px) { 
+
+    .container{
+        width: 65vh;
+    }
+    #inpMsg
+    {
+    width: 55vh;
+    }
+  }
+
+  @media screen and (min-device-width: 1000px) and (max-device-width: 1400px) { 
+
+    .container{
+        width: 80vh;
+    }
+    #inpMsg
+    {
+    width: 70vh;
+
+  }
+ 
+  }
